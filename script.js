@@ -94,7 +94,7 @@ token200.disabled = false
 //sounds
 
 const tokenSound = new Audio('./sounds/tokens.mp3');
-const cardSound = new Audio('./sounds./cards.mp3');
+const cardSound = new Audio('./sounds/cards.mp3');
 const playerWinSound = new Audio('./sounds/player-win.mp3');
 const playerLostSound = new Audio('./sounds/playerlost.mp3');
 const gameTieSound = new Audio('./sounds/game-tie.mp3');
