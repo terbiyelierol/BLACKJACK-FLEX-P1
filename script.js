@@ -93,12 +93,12 @@ token200.disabled = false
 
 //sounds
 
-const tokenSound = new Audio('/sounds/tokens.mp3');
-const cardSound = new Audio('/sounds/cards.mp3');
-const playerWinSound = new Audio('/sounds/player-win.mp3');
-const playerLostSound = new Audio('/sounds/playerlost.mp3');
-const gameTieSound = new Audio('/sounds/game-tie.mp3');
-const songSound = new Audio('/sounds/The Cinematic Orchestra - The Awakening Of A Woman (Burnout).mp3');
+const tokenSound = new Audio('./sounds/tokens.mp3');
+const cardSound = new Audio('./sounds/cards.mp3');
+const playerWinSound = new Audio('./sounds/player-win.mp3');
+const playerLostSound = new Audio('./sounds/playerlost.mp3');
+const gameTieSound = new Audio('./sounds/game-tie.mp3');
+const songSound = new Audio('./sounds/The Cinematic Orchestra - The Awakening Of A Woman (Burnout).mp3');
 const songBtn = document.getElementById('song')
 
 songBtn.addEventListener('click',(e)=>{
