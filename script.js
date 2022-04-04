@@ -266,7 +266,7 @@ function gO(){
     //game tie
     gameTieAudio()
     tokenValue = []
-    Number(walletAmount.innerText)+Number(betTotal.innerText)
+    walletAmount.innerText = Number(walletAmount.innerText)+Number(betTotal.innerText)
     betTotal.innerText = '0'
     // tieMessage()
     tieMsg.showModal()
@@ -322,6 +322,7 @@ function playerHand21 () {
     newCardDealer()
     tokenValue = []
     betTotal.innerText = '0'
+    playerLostAudio()
     // dealerWinMessage()
     dealerMsg.showModal()
     tokenEnable()
