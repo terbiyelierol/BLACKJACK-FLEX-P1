@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLACKJACK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+<link rel="stylesheet" href="/card-deck-css/css/cardstarter.css">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <audio src="/sou-nds/Ken Hamm - Buckbreak.mp3" id="my_audio" loop="loop" autoplay="autoplay"></audio>
+<div class="background-image ">
+      <div class="header">
+          <h1>BLACKJACK THE GREAT</h1>
+      </div>
+      <div class="bet-header">
+        <h1>Let's Bet</h1>
+    </div>
+    <div class="bet-area">
+      <i class="fas fa-wallet fa-4x"></i>
+      <h1 class="wallet-amount">1000</h1>
+      <div class="tokens">
+        <button class="token" id="10">10</button>
+        <button class="token" id="50">50</button>
+        <button class="token" id="100">100</button>
+        <button class="token" id="200">200</button>
+      </div>
+      <i class="fa fa-money fa-4x"></i>
+      <h1 class="bet-amount">0</h1>
+    </div>
+      <div class="dealer-total">
+        <h1 class="d-total">Dealer's Hand/Total</h1>
+        <h1 class="d-total-d"></h1>
+      </div>
+      <div class="player-total">
+        <h1 class="p-total">Player's Hand/Total</h1>
+        <h1 class="p-total-p"></h1>
+      </div>
+    <div class="table">
+      <div class="card-table">
+        <div class="dealer-area"></div>
+        <div class="player-area"></div>
+      </div>
+    </div>
+      <div class="buttons">
+          <button class="stand-btn">STAND</button>
+          <button class="hit-btn">HIT</button>
+      </div>
+      <div class="play">
+        <button class="play-btn">PLAY</button>
+        <button class="reset-btn">RESET</button>
+        <button class="playagain-btn">RESUME</button>
+    </div>
+
+      <button id="song" class="music-on">Let the Music Play</button>
+
+</div>
+
+
+<dialog class="player-msg" >
+  <button class="exit">GO TO GAME</button>
+  <h1>Player Wins The Game</h1>
+</dialog>
+
+<dialog class="dealer-msg" >
+  <button class="exit">GO TO GAME</button>
+  <h1>Dealer Wins The Game</h1>
+</dialog>
+
+<dialog class="tie-msg" >
+  <button class="exit">GO TO GAME</button>
+  <h1>Game is Tie</h1>
+</dialog>
+
+
+
+<script src="/script.js"></script>
+</body>
+</html>

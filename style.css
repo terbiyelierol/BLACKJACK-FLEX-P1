@@ -1,0 +1,272 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Dela Gothic One', cursive;
+  
+}
+.background-image{
+  background-image: url(/background/23138.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  position: relative;
+  transition: 2s;
+}
+
+.header{
+  color: #87bcfc;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 4%;
+  font-size: 25px;
+}
+.bet-header{
+  color: #87bcfc;
+  text-align: center;
+  margin: 0 auto;
+  width: 100%;
+  position: absolute;
+  top: 12%;
+  font-size: 20px;
+}
+.bet-area{
+  display: flex;
+  flex-direction: column;
+  color: #87bcfc;
+  text-align: right;
+  margin: 0 auto;
+  width: 180px;
+  position: absolute;
+  top: 30%;
+  right: 3.5%;
+  font-size: 20px;
+}
+.fas{
+  color: #87bcfc;
+}
+.token{
+  background-color: #87bcfc;
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  border-style: none;
+  margin: 2px;
+  transition: 0.5s;
+}
+.tokens{
+  display: flex;
+  justify-content: flex-end
+}
+.tokens :hover{
+  background-color: #ff0015;
+  padding: 15px;
+}
+.card-table{
+  position: absolute;
+  top: 25%;
+  left: 35%;
+}
+.player-area img{
+  height: 200px;
+  background-color: white;
+}
+.dealer-area img{
+  height: 200px;
+  background-color: white;
+  margin-bottom: 20px;
+}
+.play-msg{
+  font-size: 20px;
+  background: -webkit-linear-gradient(90deg, #87bcfc, #ff0015);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  transition: 2s;
+}
+.d-total{
+  background: -webkit-linear-gradient(90deg, #87bcfc, #ff0015);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.d-total-d{  background: -webkit-linear-gradient(90deg, #87bcfc, #ff0015);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.p-total{
+  background: -webkit-linear-gradient(90deg, #87bcfc, #ff0015);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.p-total-p{  background: -webkit-linear-gradient(90deg, #87bcfc, #ff0015);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+.dealer-total{
+  position: absolute;
+  top: 15%;
+  left: 17%;
+}
+.player-total{
+  position: absolute;
+  top: 70%;
+  left: 17%;
+}
+.buttons{
+  position: absolute;
+  top: 75%;
+  left: 45%;
+}
+.stand-btn{
+  padding: 20px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: #84000c;
+  font-weight: bold;
+  background-color: #87bcfc;
+  border-style: none;
+
+}
+.hit-btn{
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+  margin-left: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #84000c;
+  background-color: #87bcfc;
+  border-style: none;
+  letter-spacing: 1px;
+
+}
+.hit-btn:hover{
+  background-color: rgba(255, 0, 21,0.2);
+  padding: 30px;
+  transition: 1s;
+  font-size: large;
+  border: #87bcfc 5px solid;
+  border-radius: 10px;
+  color: white;
+}
+.stand-btn:hover{
+  background-color: rgba(255, 0, 21,0.2);
+  padding: 30px;
+  transition: 1s;
+  font-size: large;
+  border: #87bcfc 5px solid;
+  border-radius: 10px;
+  color: white;
+}
+.play{
+  width: 50px;
+  position: absolute;
+  top: 40%;
+  left: 6%;
+}
+.play-btn{
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 27px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #84000c;
+  background-color: #87bcfc;
+  border-style: none;
+}
+.play-btn:hover{
+  background-color: rgba(255, 0, 21,0.0);
+  padding: 20px;
+  transition: 1s;
+  font-size: large;
+  border: #87bcfc 5px solid;
+  border-radius: 10px;
+  margin-left: 5px;
+  color: white;
+}
+.reset-btn{
+  padding: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #84000c;
+  background-color: #87bcfc;
+  border-style: none;
+}
+.reset-btn:hover{
+  background-color: rgba(255, 0, 21,0.0);
+  padding: 20px;
+  transition: 1s;
+  font-size: large;
+  border: #87bcfc 5px solid;
+  border-radius: 10px;
+  margin-left: 5px;
+  color: white;
+}
+.playagain-btn{
+  padding: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+  cursor: pointer;
+  color: #84000c;
+  font-weight: bold;
+  background-color: #87bcfc;
+  border-style: none;
+}
+.playagain-btn:hover{
+  background-color: rgba(255, 0, 21,0.0);
+  padding: 20px;
+  transition: 1s;
+  font-size: large;
+  border: #87bcfc 5px solid;
+  border-radius: 10px;
+  margin-left: 5px;
+  color: white;
+}
+dialog{
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  height: 150px;
+  width: 250px;
+  justify-content: center;
+  background-color: #84000c;
+
+}
+.exit{
+  /* position: absolute;
+  left: auto; */
+  cursor: pointer;
+}
+
+#erol{
+  text-align: center;
+  padding-top: 45px;
+}
+
+.player-msg,.dealer-msg,.tie-msg{
+  text-align: center;
+  padding-top: 35px;
+}
+
+#song{
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 20px;
+  margin-top: 20px;
+  padding-left: 20px;
+  padding-right: 25px;
+  cursor: pointer;
+  color: #84000c;
+  font-weight: bold;
+  background-color: #87bcfc;
+  border-style: none;
+  font-size: large;
+}
