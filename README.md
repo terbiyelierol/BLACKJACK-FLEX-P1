@@ -23,6 +23,8 @@
 
 ## GAME RULES
 
+<a href="https://terbiyelierol.github.io/BLACKJACK-FLEX-P1/">Play The Game</a>
+
 <ol>
 <li>Player and Dealer start with the cards in the opening of the game. The Dealer cards should stay on the table one open and the other close. The Player both cards should stay open on the table.</li>
 <li>The Player goal should be to accumulate the cards total 21</li>

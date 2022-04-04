@@ -240,14 +240,7 @@ dialog{
 
 }
 .exit{
-  /* position: absolute;
-  left: auto; */
   cursor: pointer;
-}
-
-#erol{
-  text-align: center;
-  padding-top: 45px;
 }
 
 .player-msg,.dealer-msg,.tie-msg{
