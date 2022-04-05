@@ -8,10 +8,10 @@
 
 # SCREENSHOTS
 
-<img src="screenshots/Opening-the-Game.png">
-<img src="screenshots/Game-Starting.png">
-<img src="screenshots/Game-Playing-Page.png">
-<img src="screenshots/Game-Over-page.png">
+<img src="screenshots/opening.png">
+<img src="screenshots/game-start.png">
+<img src="screenshots/game-play.png">
+<img src="screenshots/ending-game.png">
 
 # TECHNOLOGIES USED
 
