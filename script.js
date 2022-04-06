@@ -259,27 +259,31 @@ function gO(){
     tokenValue = []
     betTotal.innerText = '0'
     playerLostAudio()
-    // dealerWinMessage()
     dealerMsg.showModal()
     tokenEnable()
+    hitBtn.disabled = true;
+    standBtn.disabled = true;
+    playBtn.disabled = true;
   }else if (dealerValueTotal===playerValueTotal){
-    //game tie
     gameTieAudio()
     tokenValue = []
     walletAmount.innerText = Number(walletAmount.innerText)+Number(betTotal.innerText)
     betTotal.innerText = '0'
-    // tieMessage()
     tieMsg.showModal()
     tokenEnable()
+    hitBtn.disabled = true;
+    standBtn.disabled = true;
+    playBtn.disabled = true;
   }else{
-    //player wins
     tokenValue = []
     walletAmount.innerText = Number(walletAmount.innerText)+Number(betTotal.innerText)*2
     betTotal.innerText = '0'
-    // playerWinMessage()
     playerWinAudio()
     playerMsg.showModal()
     tokenEnable()
+    hitBtn.disabled = true;
+    standBtn.disabled = true;
+    playBtn.disabled = true;
   }
 }
 
@@ -323,9 +327,11 @@ function playerHand21 () {
     tokenValue = []
     betTotal.innerText = '0'
     playerLostAudio()
-    // dealerWinMessage()
     dealerMsg.showModal()
     tokenEnable()
+    hitBtn.disabled = true;
+    standBtn.disabled = true;
+    playBtn.disabled = true;
   }
   if(playerValueTotal===21){
     if(emptyImageDeleted==false){
@@ -340,12 +346,14 @@ function playerHand21 () {
       gO()
     }else if(dealerValueTotal>21){
       walletAmount.innerText = Number(walletAmount.innerText)+Number(betTotal.innerText)*2
-      // playerWinMessage()
       playerMsg.showModal()
       playerWinAudio()
       tokenValue = []
       betTotal.innerText = '0'
       tokenEnable()
+      hitBtn.disabled = true;
+      standBtn.disabled = true;
+      playBtn.disabled = true;
     }
     
   }
@@ -373,16 +381,18 @@ function dealerPointCheck(){
     }
   }else{
     walletAmount.innerText = Number(walletAmount.innerText)+Number(betTotal.innerText)*2
-    // playerWinMessage()
     playerMsg.showModal()
     playerWinAudio()
     tokenValue = []
     betTotal.innerText = '0'
     tokenEnable()
+    hitBtn.disabled = true;
+    standBtn.disabled = true;
+    playBtn.disabled = true;
   }
 }
 
-//RESUME GAME FUNCTION
+//PLAY AGAIN GAME FUNCTION
 
 function resumeGame() {
   if(emptyImageDeleted==true){
@@ -394,6 +404,8 @@ function resumeGame() {
   cardPickPlayer();
   cardPickDealer();
   tokenDisable();
+  hitBtn.disabled = false;
+  standBtn.disabled = false;
     //if resume total 21 
     playerValueTotal=playerHandTotal(playerValue)
     if(playerValueTotal===21){
@@ -412,9 +424,11 @@ function resumeGame() {
         tokenValue = []
         playerWinAudio()
         betTotal.innerText = '0'
-        // playerWinMessage()
         playerMsg.showModal()
         tokenEnable()
+        playBtn.disabled = true;
+        hitBtn.disabled = true;
+        standBtn.disabled = true;
       }
     }
 }
@@ -514,37 +528,6 @@ exitBtn.forEach(exit=>{
   })
 })
 
-/*Another way of opening the dialog*/
-
-// function playerWinMessage() {
-//   playerMsg.setAttribute('open',true)
-//   const h1El = document.createElement('h1')
-//   h1El.setAttribute('id','player-win')
-//   const content = document.createTextNode('Player Wins The Game')
-//   h1El.appendChild(content)
-//   playerMsg.appendChild(h1El)
-//   playerMsg.showModal()
-// }
-
-// function dealerWinMessage() {
-//   dealerMsg.setAttribute('open',true)
-//   const h1El = document.createElement('h1')
-//   h1El.setAttribute('id','dealer-win')
-//   const content = document.createTextNode('Dealer Wins The Game')
-//   h1El.appendChild(content)
-//   dealerMsg.appendChild(h1El)
-//   dealerMsg.showModal()
-// }
-
-// function tieMessage() {
-//   tieMsg.setAttribute('open',true)
-//   const h1El = document.createElement('h1')
-//   h1El.setAttribute('id','game-tie')
-//   const content = document.createTextNode('Game is Tie')
-//   h1El.appendChild(content)
-//   tieMsg.appendChild(h1El)
-//   tieMsg.showModal()
-// }
 
 /*------eventListeners------*/
 

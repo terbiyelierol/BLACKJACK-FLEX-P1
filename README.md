@@ -2,7 +2,7 @@
 
 <p>Welcome to BlackJack The Great</p>
 
-<p>Blackjack, a.k.a twenty-one is a Card game whose object is to be dealt cards having a higher count than those of the dealer, up to but not exceeding 21.The dealer may use a single deck of 52 cards or two or more decks from a holder called a shoe. In this game, it was set up with a single deck of 52 cards.</p>
+<p>Blackjack aka twenty-one is a Card game whose object is to be dealt cards having a higher count than those of the dealer, up to but not exceeding 21.The dealer may use a single deck of 52 cards or two or more decks from a holder called a shoe. In this game, it was set up with a single deck of 52 cards.</p>
 
 <p>Please enjoy the game while you play</p>
 
@@ -44,7 +44,7 @@
 - to add new features before starts the game
 - to create a board to compare the scores
 
-# RESOURCES
+# ASSESTS
 
 <ul>
 <li>Background Music supported by <a href="https://en.wikipedia.org/wiki/The_Cinematic_Orchestra">The Cinematic Orchestra</a></li>
