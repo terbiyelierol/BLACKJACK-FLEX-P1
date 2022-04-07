@@ -293,6 +293,7 @@ function start() {
   removeFinalMessage=false
   tokenActive = false
   emptyImageDeleted = false
+  playBtn.disabled = true;
   hitBtn.disabled = false;
   standBtn.disabled = false;
   resume.disabled = false;

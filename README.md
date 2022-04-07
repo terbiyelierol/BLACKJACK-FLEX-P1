@@ -44,7 +44,7 @@
 - to add new features before starts the game
 - to create a board to compare the scores
 
-# ASSESTS
+# CREDITS
 
 <ul>
 <li>Background Music supported by <a href="https://en.wikipedia.org/wiki/The_Cinematic_Orchestra">The Cinematic Orchestra</a></li>
